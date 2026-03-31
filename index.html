@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">Local-first bookmark manager</p>
+        <h1>Save links without the browser bookmark clutter.</h1>
+        <p class="hero-copy">
+          Add, tag, edit, search, and remove personal bookmarks stored directly
+          in your browser.
+        </p>
+      </header>
+
+      <section class="panel form-panel" aria-labelledby="bookmark-form-title">
+        <div class="section-heading">
+          <h2 id="bookmark-form-title">Add bookmark</h2>
+          <p id="form-mode-copy">Save a title, URL, and optional category tags.</p>
+        </div>
+
+        <form id="bookmark-form" novalidate>
+          <div class="field">
+            <label for="title">Title</label>
+            <input id="title" name="title" type="text" autocomplete="off" />
+            <p class="field-error" id="title-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="url">URL</label>
+            <input
+              id="url"
+              name="url"
+              type="url"
+              inputmode="url"
+              autocomplete="off"
+              placeholder="https://example.com"
+            />
+            <p class="field-error" id="url-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="tags">Category tags</label>
+            <input
+              id="tags"
+              name="tags"
+              type="text"
+              autocomplete="off"
+              placeholder="docs, research, tools"
+            />
+          </div>
+
+          <div class="form-actions">
+            <button id="submit-button" type="submit">Save bookmark</button>
+            <button id="cancel-button" type="button" class="secondary" hidden>
+              Cancel edit
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel list-panel" aria-labelledby="bookmark-list-title">
+        <div class="toolbar">
+          <div class="section-heading">
+            <h2 id="bookmark-list-title">Bookmarks</h2>
+            <p id="bookmark-count">0 saved</p>
+          </div>
+
+          <label class="search-field" for="search">
+            <span>Search</span>
+            <input
+              id="search"
+              name="search"
+              type="search"
+              autocomplete="off"
+              placeholder="Filter by title, URL, or tag"
+            />
+          </label>
+        </div>
+
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+        <div id="bookmark-list" class="bookmark-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

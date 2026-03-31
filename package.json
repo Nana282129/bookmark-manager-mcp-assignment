@@ -1,0 +1,15 @@
+{
+  "name": "bookmark-manager-mcp-assignment",
+  "version": "1.0.0",
+  "description": "Bookmark Manager MCP Assignment",
+  "main": "app.js",
+  "scripts": {
+    "test": "vitest --pool=threads"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^4.1.2"
+  }
+}
