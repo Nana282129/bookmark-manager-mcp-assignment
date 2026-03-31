@@ -1,0 +1,46 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - paragraph [ref=e4]: Local-first bookmark manager
+    - heading "Save links without the browser bookmark clutter." [level=1] [ref=e5]
+    - paragraph [ref=e6]: Add, tag, edit, search, and remove personal bookmarks stored directly in your browser.
+  - region "Add bookmark" [ref=e7]:
+    - generic [ref=e8]:
+      - heading "Add bookmark" [level=2] [ref=e9]
+      - paragraph [ref=e10]: Save a title, URL, and optional category tags.
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Title
+        - textbox "Title" [ref=e14]
+        - alert [ref=e15]
+      - generic [ref=e16]:
+        - generic [ref=e17]: URL
+        - textbox "URL" [ref=e18]:
+          - /placeholder: https://example.com
+        - alert [ref=e19]
+      - generic [ref=e20]:
+        - generic [ref=e21]: Category tags
+        - textbox "Category tags" [ref=e22]:
+          - /placeholder: docs, research, tools
+      - button "Save bookmark" [active] [ref=e24] [cursor=pointer]
+  - region "Bookmarks" [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Bookmarks" [level=2] [ref=e28]
+        - paragraph [ref=e29]: 1 saved
+      - generic [ref=e30]:
+        - generic [ref=e31]: Search
+        - searchbox "Search" [ref=e32]
+    - paragraph [ref=e33]: Bookmark saved.
+    - article [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - heading "OpenAI Docs" [level=3] [ref=e41]
+          - link "https://platform.openai.com/docs" [ref=e42] [cursor=pointer]:
+            - /url: https://platform.openai.com/docs
+        - generic [ref=e43]:
+          - button "Edit" [ref=e44] [cursor=pointer]
+          - button "Delete" [ref=e45] [cursor=pointer]
+      - list [ref=e46]:
+        - listitem [ref=e47]: docs
+        - listitem [ref=e48]: ai
+        - listitem [ref=e49]: reference
